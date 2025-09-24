@@ -38,7 +38,7 @@ export default function Scene() {
   return (
     <div className="flex justify-center my-0 mx-auto">
       <div
-        className="fixed h-[110vh] overflow-hidden -top-[10%]"
+        className="fixed h-[110vh] overflow-hidden -top-[1%]"
         style={{ aspectRatio: "1540/1080" }}
       >
         {layers.map((layer, i) => {
@@ -74,10 +74,10 @@ export default function Scene() {
         })
 }
       </div>
-      {/*<div
-        className="absolute inset-0 pointer-events-none border-30 border-black h-[100vh] mx-auto"
+      <div
+        className="fixed inset-0 pointer-events-none border-30 border-black h-[110vh] mx-auto -top-[5%]"
         style={{ aspectRatio: "1540/1080" }}
-      ></div>*/}
+      ></div>
     </div>
   );
 }
